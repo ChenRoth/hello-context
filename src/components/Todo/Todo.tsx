@@ -6,7 +6,7 @@ export class Todo extends React.Component<any> {
         const { text } = this.props;
         return (
             <StyleConsumer>
-                {style => <p style={style}>{text}</p>}
+                {({ style }) => <p style={style}>{text}</p>}
             </StyleConsumer>
         )
     }
